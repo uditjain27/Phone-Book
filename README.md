@@ -18,6 +18,6 @@ This app is used to manage our contact numbers. This app can -
 
 Contributions -  
 <ul>
-<li><strong>Udit Jain</strong> managed FrontEnd, UI and Storage using Android</li>
-<li><strong>Shivam Garg</strong> managed BackEnd using Java </li>
+<li><strong>Udit Jain</strong> managed FrontEnd, UI using Android and Storage</li>
+<li><strong>Shivam Garg</strong> managed BackEnd using Java and Storage <link>https://github.com/Shivam541</link></li>
 </ul>
