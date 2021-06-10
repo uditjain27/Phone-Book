@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuOptions"
+    android:background="@drawable/fullbody_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/header_bg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PhoneBook"
+                android:textSize="45dp"
+                android:layout_marginTop="7dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="serif-monospace"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-25dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                app:cardCornerRadius="55dp">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/image_login" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="New Contact"
+                android:textSize="24dp"
+                android:layout_marginLeft="120dp"
+                android:textColor="@android:color/holo_red_light"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="335dp"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/body_bg">
+            <TextView
+                android:id="@+id/mobilelabel"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginLeft="15dp"
+                android:text="Mobile"
+                android:textSize="15dp"
+                android:textColor="@android:color/holo_red_light"/>
+            <TextView
+                android:id="@+id/viewnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="Search Contact"
+                android:textSize="20dp"
+                android:textColor="@android:color/holo_red_light"/>
+            <TextView
+                android:id="@+id/emaillabel"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:text="E-Mail"
+                android:textSize="15dp"
+                android:textColor="@android:color/holo_red_light"/>
+            <TextView
+                android:id="@+id/viewemail"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="Search Contact"
+                android:textSize="20dp"
+                android:textColor="@android:color/holo_red_light"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="115dp"
+                android:layout_height="70dp"
+                android:text="Delete Contact"
+                android:textColor="#4f62f7"
+                android:background="#c4ac4e"
+                android:textSize="18dp"
+                android:layout_marginLeft="4dp"
+                android:onClick="delete"/>
+            <Button
+                android:layout_width="115dp"
+                android:layout_height="70dp"
+                android:text="Update Contact"
+                android:textColor="#4f62f7"
+                android:background="#c4ac4e"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="update"/>
+            <Button
+                android:layout_width="115dp"
+                android:layout_height="70dp"
+                android:text=" Call contact"
+                android:textColor="#4f62f7"
+                android:background="#c4ac4e"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="call"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Java Project made by Udit Jain and Shivam Garg"
+                android:textSize="15dp"
+                android:background="#5ed3e0"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
